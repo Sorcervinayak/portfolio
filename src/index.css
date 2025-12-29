@@ -1,0 +1,50 @@
+/* Import Google Fonts at the very top */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Outfit:wght@100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Apply Saira globally */
+* {
+  font-family: 'Saira', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+
+html {
+  scrollbar-width: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  cursor: none
+}
+
+/* Also remove cursor from clickable elements explicitly */
+a,
+button,
+input,
+textarea,
+select {
+  cursor: none !important;
+}
+
+.accent-text {
+  color: rgb(var(--accent));
+}
+
+.accent-bg {
+  background-color: rgb(var(--accent));
+}
+
+.accent-border {
+  border-color: rgb(var(--accent));
+}
+
+.accent-glow {
+  box-shadow: 0 0 20px rgb(var(--accent) / 0.6);
+}
+
+
+@import "tailwindcss"
