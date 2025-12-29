@@ -71,6 +71,7 @@ const Hero = () => {
               src="/portfolioimage.jpeg"
               alt="Profile"
               className="w-full h-full object-cover rounded-full overflow-hidden relative animate-pulse-slow z-10"
+               style={{ objectPosition: "50% 18%" }}
             />
 
             {/* Inner Glow Ring */}
